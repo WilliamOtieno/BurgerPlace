@@ -28,11 +28,15 @@
     </section>
     <section class="FormCon">
         <div class="container">
-            <input type="text" name="name" id="name" placeholder="Your name">
-            <input type="text" name="emai" id="emai" placeholder="emai">
-            <input type="text" name="location" id="location" placeholder="location">
-            <input type="text" name="address" id="address" placeholder="address">
-            <input type="text" name="Phone" id="Phone" placeholder="Phone">
+            <form action="" method="POST">
+                {% csrf_token %}
+                <input type="text" name="name" id="name" placeholder="Your name">
+                <input type="text" name="email" id="email" placeholder="email">
+                <input type="text" name="location" id="location" placeholder="location">
+                <input type="text" name="address" id="address" placeholder="address">
+                <input type="text" name="Phone" id="Phone" placeholder="Phone">
+                <button type="submit" class="btn btn-primary">PLace Order</button>
+            </form>
         </div>
     </section>
     
