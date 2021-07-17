@@ -45,7 +45,7 @@ section{
 }
 @media screen and (max-width:1000px){
     .header .logo-container{
-        width:60%;
+        width:50%;
     }
 }
 .header .link-container{
