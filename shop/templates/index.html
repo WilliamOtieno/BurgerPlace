@@ -67,14 +67,12 @@
         console.log('this is working ')
 
         $(document).on('click','#order',function(){
-            localStorage.setItem('object', JSON.stringify({
-            //Insert Number(value)
-            number: Number(document.getElementById('quantity').value);
-            }));
+            localStorage.setItem('object', parseFloat(document.getElementById('quantity').value)
+            );
 
             // After get item
             var object = localStorage.getItem('object');
-            console.log(JSON.parse(object));
+            console.log(object);
         })
 
         
