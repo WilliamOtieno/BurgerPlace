@@ -39,7 +39,16 @@
                 padding-top:15px;
                 border-radius: 5px;
                 padding-left: 10px;
-                font-weight:bold;"><div class="title">Quantity : ,</div><div id="number"></div></div>
+                font-weight:bold;"><div class="title">Quantity : &nbsp;</div><div id="number"></div></div>
+                <div  class="order-container" style="width:100%;
+                height: 50px;
+                display:flex;
+                background-color:#fff;
+                margin-bottom:30px;
+                padding-top:15px;
+                border-radius: 5px;
+                padding-left: 10px;
+                font-weight:bold;"><div class="title">Sub Total : &nbsp;</div><div id="totalprice"></div></div>
                 <input type="text" name="name" id="name" placeholder="Your name">
                 <input type="text" name="email" id="email" placeholder="email">
                 <input type="text" name="location" id="location" placeholder="location">
@@ -53,7 +62,8 @@
         var object = JSON.parse(localStorage.getItem('object'));
         console.log(object,)
             document.getElementById('number').innerHTML = object;
-        
+        var totalprice = object * 100;
+        document.getElementById('totalprice').innerHTML = totalprice;
     </script>
 </body>
 </html>
