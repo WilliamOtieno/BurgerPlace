@@ -49,17 +49,20 @@
                 <div class="text-header">
                     <h1>Get yourself a luscious burger </h1>
                </div>
+               <form action="">
+                   {% csrf_token %}
                <div class="text-body">
                     <img src="{% static './img/burger.jpg'%}" alt="">
-                    <select id="flavour" name="flavour" aria-placeholder="Select flavour">
-                        <option value="huwaian">Huwaian</option>
-                    </select>
-                    <input id="quantity" name="quantity" type="number" placeholder="How many ?">
+                        <select id="flavour" name="flavour" aria-placeholder="Select flavour">
+                            <option value="huwaian">Huwaian</option>
+                        </select>
+                        <input id="quantity" name="quantity" type="number" placeholder="How many ?" required>
 
-               </div>
-               <div class="text-links">
-                    <button id="order">ORDER NOW !</button>
-               </div>
+                    </div>
+                    <div class="text-links">
+                            <button id="order">ORDER NOW !</button>
+                    </div>
+                </form>
             </div>
         </div>
     </section>
