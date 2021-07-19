@@ -149,7 +149,9 @@ section{
     color:#fff;
     margin-right: 0;
     margin-left:5px;
-    width:150px;
+    padding-top:15px;
+    height:50px;
+    width:160px;
 }
 .container{
     width:90vw;
