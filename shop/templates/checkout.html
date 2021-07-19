@@ -60,10 +60,16 @@
     </section>
     <script type="text/javascript">
         var object = JSON.parse(localStorage.getItem('object'));
-        console.log(object,)
+        if(object == null){
+            object = 0;
+        }
+        else{
+            console.log(object)
             document.getElementById('number').innerHTML = object;
-        var totalprice = object * 100;
-        document.getElementById('totalprice').innerHTML = totalprice;
+            var totalprice = object * 100;
+            document.getElementById('totalprice').innerHTML = totalprice;
+        }
+        
     </script>
 </body>
 </html>
