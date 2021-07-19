@@ -50,7 +50,7 @@
                     <h1>Get yourself a luscious burger </h1>
                </div>
                <form action="">
-                   {% csrf_token %}
+                   
                <div class="text-body">
                     <img src="{% static './img/burger.jpg'%}" alt="">
                         <select id="flavour" name="flavour" aria-placeholder="Select flavour">
@@ -60,7 +60,7 @@
 
                     </div>
                     <div class="text-links">
-                            <button id="order">ORDER NOW !</button>
+                        <a href="/checkout" style="width:auto"> <button >ORDER NOW !</button></a>
                     </div>
                 </form>
             </div>
