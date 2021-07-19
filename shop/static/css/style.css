@@ -92,7 +92,7 @@ section{
     width: 60%;
     color:#fff;
     font-weight:bold;
-    font-size:2.5em;
+    font-size: 2em;
 }
 .body-container .text-con .text-body img{
     width: 300px;
@@ -132,7 +132,7 @@ section{
     border-radius: 5px;
     font-weight:bold;
     text-transform:uppercase;
-    font-size: 0.4em;
+    font-size: 0.2em;
     cursor:pointer;
 }
 .body-container .text-con .text-links  #find{
@@ -142,11 +142,14 @@ section{
 }
 .body-container .text-con .text-links  #order{
     background-color: red;
+    text-decoration: none;
+    border-radius: 10px;
+    font-size: 0.2em;
     border:none;
     color:#fff;
     margin-right: 0;
     margin-left:5px;
-    width:50%;
+    width:150px;
 }
 .container{
     width:90vw;
