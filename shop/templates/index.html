@@ -9,6 +9,9 @@
     <title>Burger PLace</title>
     <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="{% static './css/style.css'%}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap" rel="stylesheet">
 </head>
 <body>
     <section class="HeaderContainer">
@@ -33,7 +36,7 @@
                     <h1>Order a burger now !!!</h1>
                </div>
                <div class="text-body">
-                   <h4 style="text-shadow: 1px 1px 2px black, 0 0 1em black, 0 0 0.2em black;">Get your huwaian burger @ 100 bob only !</h4>
+                   <h4 style="text-shadow: 1px 1px 2px black, 0 0 1em black, 0 0 0.2em black;">Get your hawaiian burger @ 100 bob only !</h4>
                     <p>Free delivery around Maasai Lodge Rongai</p>
                </div>
                <div class="text-links">
@@ -54,13 +57,13 @@
                <div class="text-body">
                     <img src="{% static './img/burger.jpg'%}" alt="">
                         <select id="flavour" name="flavour" aria-placeholder="Select flavour">
-                            <option value="huwaian">Huwaian</option>
+                            <option value="huwaian">Hawaiian</option>
                         </select>
                         <input id="quantity" name="quantity" type="number" placeholder="How many ?" required>
 
                     </div>
                     <div class="text-links">
-                        <a href="/checkout" style="width:auto"> <button >ORDER NOW !</button></a>
+                        <a href="/checkout" style="width:auto"> ORDER NOW !</a>
                     </div>
                 </form>
             </div>
