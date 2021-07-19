@@ -4,9 +4,10 @@ body{
 
 .btnprimary{
     height: 50px;
-    width: 100px;
+    width: 150px;
     border: none;
     background: red;
     color: #fff;
     font-weight: bold;
+    border-radius: 10px;
 }
