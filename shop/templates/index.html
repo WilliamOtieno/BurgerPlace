@@ -73,12 +73,12 @@
         console.log('this is working ')
 
         $(document).on('click','#order',function(){
-            localStorage.setItem('object', parseFloat(document.getElementById('quantity').value)
-            );
-
+                localStorage.setItem('object', parseFloat(document.getElementById('quantity').value));
+           
             // After get item
             var object = localStorage.getItem('object');
             console.log(object);
+            
         })
 
         

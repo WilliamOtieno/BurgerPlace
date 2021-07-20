@@ -7,6 +7,8 @@ class Order(models.Model):
     location = models.CharField(max_length=200)
     address = models.CharField(max_length=200)
     Phone = models.CharField(max_length=200)
+    quantity = models.CharField(max_length=200)
+    totalp = models.CharField(max_length=200)
 
 class SubOrder(models.Model):
     quantity = models.CharField(max_length=200)

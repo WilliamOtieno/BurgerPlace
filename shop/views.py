@@ -14,8 +14,10 @@ def checkout(request):
         location = request.POST.get('location',"")
         address = request.POST.get('address',"")
         Phone = request.POST.get('Phone',"")
+        quanity = request.POST.get('quantity',"")
+        totalp = request.POST.get('totalp',"")
 
-        order = Order(name=name,email=email,location=location,address=address,Phone=Phone)
+        order = Order(name=name,email=email,location=location,address=address,Phone=Phone, quantity=quanity, totalp=totalp)
         order.save()
 
     return render(request, 'checkout.html')
