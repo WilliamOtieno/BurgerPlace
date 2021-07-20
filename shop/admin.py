@@ -4,5 +4,6 @@ from .models import Order
 # Register your models here.
 class OrderAdmin(admin.ModelAdmin):
     list_display = ('name','location','totalp')
+    list_filer = ('location')
 
 admin.site.register(Order, OrderAdmin)
